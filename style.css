@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+:root {
+    --blanco: white;
+    --fondo: #3a86ff;
+    --menu: #ffbe0b;
+    --bg-black: #023047;
+    --bg-green: #80ed99;
+    --bg-red: #ef233c;
+    --bg-purple: #8338ec;
+    --bg-rosado-rosa: #ff006e; 
+    --bg-yellow-chil: #fcbf49;
+    --bg-blue: #7678ed;
+
+}
+
+*{
+    margin:0;
+    box-sizing: border-box;
+    padding:0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background:var(--fondo) ;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0px 30px 0px 30px;
+    position: fixed;
+    top: 0;
+
+}
+
+.logo{
+    height: 100%;
+    position: sticky;
+    width: auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+.navbar,
+.navbar-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.navbar{
+    gap:150px;
+
+}
+
+.navbar-list{
+    gap:30px;
+    
+}
+
+.navbar-list a {
+    color:var(--bg-black);
+    font-size: 14px;
+    
+}
+
+.navbar-list li:first-child > a{
+    color: var(--bg-green);
+    font-weight: 600;
+
+}
+
+.cart-icon{
+    border: 1px solid var(--blanco);
+    padding: 12px 20px;
+    margin-top: 3px;
+    border-radius: 18px;
+    height: 48px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+main{
+    background:var(--fondo);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#hero{
+    margin-top: 65px;
+    padding: 70px 0;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-info {
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+     width: 50%;
+}
+
+.hero-info h1{
+    font-size: 48px;
+    width: 80%;
+    min-width: 500px;
+    font-weight: 800;
+    color: var(--menu);
+}
+
+.hero-info p{
+    font-size: 14px;
+    color: white;
+}
+.hero-info p > span{
+    font-weight: 800;
+}
+
+.hero-info a{
+    color: var(--blanco);
+    background-color: var(--menu);
+    width: 120px;
+    padding:8px 0px;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: center;
+}
